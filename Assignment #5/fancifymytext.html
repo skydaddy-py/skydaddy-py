@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fancify Shamcify</title>
+
+  <!-- Link to your script file -->
+  <script src="fancifymytext.js" defer></script>
+</head>
+<body>
+  <h1>Fancify My Text</h1>
+
+  <!-- Text Area Fieldset -->
+  <fieldset>
+    <legend>Text</legend>
+    <textarea id="userText" rows="4" cols="30" placeholder="Type your text here..."></textarea>
+  </fieldset>
+
+  <!-- UI Controls -->
+  <fieldset>
+    <legend>Fancify</legend>
+    <button id="biggerBtn" onclick="makeTextBigger()">Bigger!</button>
+    <div>
+      <label>
+        <input type="radio" id="fancyShmancy" name="style" onchange="applyStyle()"> FancyShmancy
+      </label>
+    </div>
+    <div>
+      <label>
+        <input type="radio" id="boringBetty" name="style" onchange="applyStyle()" checked> BoringBetty
+      </label>
+    </div>
+  </fieldset>
+
+  <!-- Moo Button -->
+  <button id="mooBtn" onclick="mooifyText()">Moo</button>
+
+</body>
+</html>
